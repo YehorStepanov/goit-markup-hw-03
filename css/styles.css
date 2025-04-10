@@ -11,8 +11,8 @@ body{
 }
 .container{
     width: 1158px;
-    margin: 120px 156px;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
 li{
@@ -30,7 +30,6 @@ img{
 .header .container{
     width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -49,6 +48,7 @@ img{
     gap: 40px;
 }
 .nav-link{
+    display: block;
     padding: 24px 0;
 }
 .address-list{
@@ -123,6 +123,7 @@ address{
 .section-f{
     max-width: 1440px;
     background: #2e2f42;
+    padding: 188px 0;
 }
 .main-hf{
     font-family: "Roboto", sans-serif;
@@ -132,7 +133,7 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    width: 496px;
+    max-width: 496px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -160,7 +161,9 @@ address{
     background: #404bbf;
 }
 
-
+.section-t{
+    padding: 120px 0;
+}
 .section-t-hth {
     font-weight: 500;
     font-size: 20px;
@@ -177,7 +180,7 @@ address{
     gap: 24px;
 }
 .section-t-li{
-    width: 264px;
+    width: calc((100% - 3 * 24px) / 4);
 
 }
 .section-t-p{
@@ -190,6 +193,7 @@ address{
 
 .section-th{
     background-color: #f4f4fd;
+    padding: 120px 0;
 }
 .section-th-ht{
     text-transform: capitalize;
@@ -199,7 +203,6 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
-    padding-top: 120px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 72px;
@@ -209,7 +212,6 @@ address{
     flex-direction: row;
     justify-content: space-between;
     gap: 24px;
-    padding-bottom: 120px;
 }
 .section-th-li{
     border-radius: 0 0 4px 4px;
@@ -217,8 +219,10 @@ address{
 .section-th-img{
     width: 264px;
     height: 260px;
-    margin-bottom: 32px;
 
+}
+.section-th-div{
+    margin: 32px 0;
 }
 .section-th-hth{
     font-weight: 500;
@@ -244,6 +248,10 @@ address{
 .section-fr-li{
     background-color: #FFFFFF;
 }
+
+.section-fr{
+    padding: 120px 0;
+}
 .section-fr-ht {
     text-transform: capitalize;
     font-weight: 700;
@@ -252,15 +260,34 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
+.section-fr-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.section-fr-li{
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    width: calc((100% - 2 * 24px) / 3);
+    margin-bottom: 48px;
+}
 
 .section-fr-hth {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
-    color:#2e2f42
+    color:#2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+    text-align: start;
 }
 
 .section-fr-p {
@@ -269,6 +296,8 @@ address{
     line-height: 150%;
     letter-spacing: 0.02em;
     color:#434455;
+    margin-bottom: 32px;
+    margin-left: 16px;
 }
 .visually-hidden {
     position: absolute;
@@ -285,9 +314,20 @@ address{
 
 .footer{
     background-color: #2e2f42;
+    padding: 100px 0;
+}
+.footer .container{
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
+}
 .footer-text{
+    width: 264px;
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #f4f4fd;
