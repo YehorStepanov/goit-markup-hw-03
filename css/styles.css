@@ -11,7 +11,8 @@ body{
 }
 .container{
     width: 1158px;
-    padding: 120px 156px;
+    margin: 120px 156px;
+    padding: 0 15px;
 }
 
 li{
@@ -27,7 +28,7 @@ img{
     border-bottom: 1px solid #e7e9fc
 }
 .header .container{
-    width: 1128px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
     display: flex;
@@ -42,11 +43,13 @@ img{
 
 .nav-list{
     padding: 0;
-    margin-left: 76px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap:20px;
+    gap: 40px;
+}
+.nav-link{
+    padding: 24px 0;
 }
 .address-list{
     padding: 0;
@@ -129,6 +132,9 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .main-button{
     background: #4d5ae5;
@@ -141,10 +147,19 @@ address{
     cursor: pointer;
 }
 
+.main-button{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin:  0 auto;
+}
 .main-button:focus,
 .main-button:hover{
     background: #404bbf;
 }
+
 
 .section-t-hth {
     font-weight: 500;
@@ -152,6 +167,18 @@ address{
     line-height: 120%;
     letter-spacing: 0.02em;
     color:#2e2f42;
+    margin-bottom: 8px;
+}
+
+.section-t-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+.section-t-li{
+    width: 264px;
+
 }
 .section-t-p{
     font-weight: 400;
@@ -172,6 +199,26 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+.section-th-ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+    padding-bottom: 120px;
+}
+.section-th-li{
+    border-radius: 0 0 4px 4px;
+}
+.section-th-img{
+    width: 264px;
+    height: 260px;
+    margin-bottom: 32px;
+
 }
 .section-th-hth{
     font-weight: 500;
@@ -180,6 +227,7 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 .section-th-p{
     font-weight: 400;
@@ -188,6 +236,7 @@ address{
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 32px;
 }
 
 .section-t-li,
