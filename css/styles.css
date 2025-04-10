@@ -222,7 +222,7 @@ address{
 
 }
 .section-th-div{
-    margin: 32px 0;
+    padding: 32px 0; 
 }
 .section-th-hth{
     font-weight: 500;
@@ -271,22 +271,24 @@ address{
     flex-wrap: wrap;
 }
 .section-fr-li{
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
     width: calc((100% - 2 * 24px) / 3);
-    margin-bottom: 48px;
+    row-gap: 48px;
 }
 
+.section-fr-div{
+    padding: 32px 16px; 
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc; 
+    border-right: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
 .section-fr-hth {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
     letter-spacing: 0.02em;
     color:#2e2f42;
-    margin-top: 32px;
-    margin-bottom: 8px;
-    margin-left: 16px;
     text-align: start;
 }
 
@@ -296,8 +298,6 @@ address{
     line-height: 150%;
     letter-spacing: 0.02em;
     color:#434455;
-    margin-bottom: 32px;
-    margin-left: 16px;
 }
 .visually-hidden {
     position: absolute;
